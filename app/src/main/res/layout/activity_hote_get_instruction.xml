@@ -20,25 +20,9 @@
         app:layout_constraintTop_toBottomOf="@+id/Environment" />
 
     <Button
-        android:id="@+id/Sanitation"
-        android:layout_width="300dp"
-        android:layout_height="71dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#FD95EC"
-        android:text="Sanitation Methods"
-        android:textColor="#131111"
-        android:textColorHint="#1C1A1A"
-        app:cornerRadius="30px"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-    <Button
         android:id="@+id/button3"
         android:layout_width="300dp"
         android:layout_height="71dp"
-        android:layout_marginTop="83dp"
         android:backgroundTint="#FD95EC"
         android:text="Save And Protect Clean Water"
         android:textColor="#121111"
@@ -46,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/Sanitation" />
+        tools:layout_editor_absoluteY="83dp" />
 
     <TextView
         android:id="@+id/textView3"
