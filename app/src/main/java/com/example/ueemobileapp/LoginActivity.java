@@ -1,5 +1,7 @@
-package com.example.ueemobileapp;
+package com.example.clean_water_and_sanitation;
 
+
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.NonNull;
 
@@ -31,6 +33,10 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Login");
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         userNameEdt = findViewById(R.id.idEdtUserName);
         pwdEdt = findViewById(R.id.idEdtPwd);
@@ -64,7 +70,7 @@ public class LoginActivity extends AppCompatActivity {
                             if(task.isSuccessful()) {
                                 loadingPB.setVisibility(View.GONE);
                                 Toast.makeText(LoginActivity.this, "Login Successfull..", Toast.LENGTH_SHORT).show();
-                                Intent i = new Intent(LoginActivity.this, MainActivity.class);
+                                Intent i = new Intent(LoginActivity.this, StudentHomeActivity.class);
                                 startActivity(i);
                                 finish();
                             } else{
@@ -85,7 +91,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onStart();
         FirebaseUser user = mAuth.getCurrentUser();
         if(user != null) {
-            Intent i = new Intent(LoginActivity.this, MainActivity.class);
+            Intent i = new Intent(LoginActivity.this, StudentHomeActivity.class);
             this.finish();
         }
     }

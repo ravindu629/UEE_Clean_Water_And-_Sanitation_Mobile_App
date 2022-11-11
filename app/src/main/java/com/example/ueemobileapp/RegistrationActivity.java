@@ -1,5 +1,6 @@
-package com.example.ueemobileapp;
+package com.example.clean_water_and_sanitation;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -32,6 +33,10 @@ public class RegistrationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Register");
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         //initialize variables
         userNameEdt = findViewById(R.id.idEdtUserName);
