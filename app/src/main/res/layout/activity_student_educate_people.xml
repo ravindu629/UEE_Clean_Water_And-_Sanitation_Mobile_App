@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    tools:context=".StudentEducatePeopleActivity">
+
+        <TextView
+            android:id="@+id/educate_people_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Educate People"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="348dp"
+        android:layout_height="193dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/educate_people_heading"
+        app:srcCompat="@drawable/educate_people_image" />
+
+    <Button
+        android:id="@+id/clean_water_btn3"
+        android:layout_width="266dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#CBE8BA"
+        android:text="@string/clean_water"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/save_protect_water_btn5"
+        android:layout_width="266dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#CBE8BA"
+        android:text="@string/save_protect_water"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clean_water_btn3"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/sanitation_btn7"
+        android:layout_width="266dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#CBE8BA"
+        android:text="@string/sanitation"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save_protect_water_btn5"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/other_information_btn"
+        android:layout_width="266dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#CBE8BA"
+        android:text="@string/other_information"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sanitation_btn7"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    tools:context=".StudentHomeActivity">
+
+    <ImageView
+        android:id="@+id/student_main_page_header"
+        android:layout_width="336dp"
+        android:layout_height="219dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/student_home_image"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/student_heading" />
+
+    <!--        android:onClick="educate_people_onClick"-->
+    <TextView
+        android:id="@+id/student_heading"
+        android:layout_width="181dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/hello_users"
+
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/educate_people_btn"
+        android:layout_width="186dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#CBE8BA"
+        android:onClick="Onclick"
+        android:text="@string/educate_people"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_main_page_header"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/research_btn"
+        android:layout_width="185dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#CBE8BA"
+        android:text="@string/research"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/educate_people_btn"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/issues_btn"
+        android:layout_width="185dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#CBE8BA"
+        android:text="@string/issues"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/research_btn"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
