@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
 public class StudentHomeActivity extends AppCompatActivity {
 
     Button button;
@@ -22,29 +23,12 @@ public class StudentHomeActivity extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         button = findViewById(R.id.educate_people_btn);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent edu = new Intent(getApplicationContext(),StudentEducatePeopleActivity.class);
                 startActivity(edu);
-            }
-        });
-
-        button = findViewById(R.id.research_btn);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent research = new Intent(getApplicationContext(),StudentResearchesActivity.class);
-                startActivity(research);
-            }
-        });
-
-        button = findViewById(R.id.issues_btn);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent issue = new Intent(getApplicationContext(),StudentIssuesActivity.class);
-                startActivity(issue);
             }
         });
     }
@@ -53,4 +37,13 @@ public class StudentHomeActivity extends AppCompatActivity {
 //        Intent edu = new Intent(this,StudentEducatePeopleActivity.class);
 //        startActivity(edu);
 //    }
+
+    public static class protect_water_activity extends AppCompatActivity {
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_protect_water);
+        }
+    }
 }
