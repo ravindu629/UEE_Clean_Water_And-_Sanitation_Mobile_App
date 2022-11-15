@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ED07A591"
+    tools:context=".hotelregister_Activity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/idTILHotelID"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter hotel id"
+        android:padding="5dp"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idEdtHotelID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#5E5656"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/idTILHotelName"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTILHotelID"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter Hotel name"
+        android:padding="5dp"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white"
+        tools:ignore="MissingConstraints,NotSibling">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idEdtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5E5656"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/idTILHotelLocation"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTILHotelName"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter Hotel Location"
+        android:padding="5dp"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white"
+        tools:ignore="MissingConstraints,NotSibling">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idEdtLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5E5656"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/idTILHotelPassword"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTILHotelLocation"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter password"
+        android:padding="5dp"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white"
+        tools:ignore="MissingConstraints,NotSibling">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idEdtPwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5E5656"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/idTILHotelDescription"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTILHotelPassword"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter Description"
+        android:padding="5dp"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Hotel Register"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/registerbtn"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="50dp"
+        android:text="register"
+        tools:ignore="MissingConstraints" />
+
+
+</RelativeLayout>

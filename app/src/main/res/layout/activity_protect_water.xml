@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    tools:context=".StudentHomeActivity$protect_water_activity">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="385dp"
+        android:layout_height="214dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView17"
+        app:srcCompat="@drawable/ca139224f43b8b3ab2f4dad782e3733d" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Save and Protect Clean Water"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="107dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginEnd="286dp"
+        android:text="Methods"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="390dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="258dp"
+        android:layout_marginEnd="13dp"
+        android:text="Don't let your water consumption run out of control. Save 6 litres of water a minute by turning off your tap while you brush your teeth. Fix leaky taps too – and stop what could be 60 litres of water going straight down the drain every week. Every minute you spend in a power shower uses up to 17 litres of water ."
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="384dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="16dp"
+        android:text="Use a displacement device (a water-filled bottle) in the toilet tank to reduce the amount of water required to flush. Use toilet only for its intended purpose. ... Repair leaky taps or toilets immediately. ..."
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
